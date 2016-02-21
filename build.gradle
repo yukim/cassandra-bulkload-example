@@ -3,7 +3,8 @@ apply plugin: 'java'
 sourceCompatibility = 1.7
 version = '1.0'
 
-def cassandra_version = '2.1.0'
+def cassandra_version = '2.1.12'
+def supercsv_version = '2.1.0'
 
 repositories {
     mavenLocal()
@@ -12,6 +13,7 @@ repositories {
 
 dependencies {
     compile group: 'org.apache.cassandra', name: 'cassandra-all', version: cassandra_version
+    compile group: 'net.sf.supercsv', name: 'super-csv', version: supercsv_version
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
